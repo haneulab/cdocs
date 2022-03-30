@@ -157,6 +157,14 @@ Even though the programming languages `C` and `Python` are very distinct, there 
 
 When importing modules to your file, we often specify the key word `from` and/or `import` with `module_name` like `typing`, `random`, and `requests`. The keyword importing a module in `C` is `#include` followed by the module name.
 
+```python
+import requests
+from random import randint
+# import and from are keywords
+# requests and random are modules (libraries)
+# randint is a function inside random module
+```
+
 ```c
 #include <stdio.h>
 // #include is a keyword for import
@@ -164,7 +172,7 @@ When importing modules to your file, we often specify the key word `from` and/or
 // stdio.h is a library (module) 
 ```
 
-**🧵 Python Functions**
+**🧵 Functions**
 
 There are some syntactic differences between python functions and c functions
 
