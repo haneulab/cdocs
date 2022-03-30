@@ -149,7 +149,7 @@ pwd
 
 ---
 
-<h3 id="cli">🚀 Python To C</h3>
+<h3 id="python">🚀 Python To C</h3>
 
 Even though the programming languages `C` and `Python` are very distinct, there are some common concepts we can bring to this course.
 
