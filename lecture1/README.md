@@ -1,22 +1,13 @@
-Creating a `c` file, writing a program to it, then compiling it to run in CLI.
+We will create a `main.c` file and write a print function. For the program refer to `./main.c`.
+
+After writing out our programs, we must compile `main.c` so that it can be run.
 
 ```bash
-touch ./main.c
-```
-
-```c
-// main.c
-#include<stdio.h>
-
-int main ()
-{
-    printf("Hello, Aron!\n");
-}
-```
-
-```bash
+# complete ./main.c => this creates a.out file
 gcc ./main.c
+
+# run a.out
+a.out
+# or
 ./a.out
-# or we can combine them
-gcc ./main.c && ./a.out
 ```
