@@ -29,7 +29,7 @@ Now, if you remember python built-in funtion `print`, you know that we can use `
 ```python
 my_favorite_num = 7
 my_favroite_char = 'a'
-print(f"My favorite number is {my_favorite_num}.\n My favorite character is {my_favorite_char}.")
+print(f"My favorite number is {my_favorite_num}.\n My favorite character is {my_favorite_char}.");
 ```
 
 But in C, we have a function called `printf`. The difference between this and the python `print` function is that in C we must use what we call **format specifer** to variables used in `printf` function. This means that unlike python code above, we must specify some kind of formatter to refer to that variable. Each variable type has different formatter.
@@ -40,7 +40,7 @@ int main () {
     int myFavoriteNum = 7;
     char myFavoriteChar = 'X';
     
-    printf("My favorite number is {myFavoriteNum}.\nMy favorite character is {myFavoriteCharacter}.\n")
+    printf("My favorite number is {myFavoriteNum}.\nMy favorite character is {myFavoriteCharacter}.\n");
 }
 
 // good example C
@@ -48,7 +48,7 @@ int main () {
     int myFavoriteNum = 7;
     char myFavoriteChar = 'X';
     
-    printf("My favorite number is %d.\nMy favorite character is %c.\n", myFavoriteNum, myFavoriteChar)  
+    printf("My favorite number is %d.\nMy favorite character is %c.\n", myFavoriteNum, myFavoriteChar);
 }
 ```
 
@@ -63,15 +63,14 @@ I will list some of the most usede format specifiers. *The lecture today only we
 |`int`|`%d`|
 |`char`|`%c`|
 |`float`|`%f`|
-|`float`|`%f`|
 
 > **NOTE** Sometimes, you may want to include `%` as a string rather than a format specifier prefix. For example I want to assign a string 'I will win the game at 50%` to a variable, then you just have to use two percent signs.
 
 ```c
 // bad
-printf("I will win the game at 50% of chance\n")
+printf("I will win the game at 50% of chance\n");
 // good
-printf("I will win the game at 50%% of chance\n")
+printf("I will win the game at 50%% of chance\n");
 ```
 
 #### (EXTRA) Compling the executables
