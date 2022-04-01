@@ -1,4 +1,7 @@
-We will create a `main.c` file and write a print function. For the program refer to `./main.c`.
+## Lecture 1
+
+We will create a `main.c` file and write a print fun
+ction. For the program refer to `./main.c`.
 
 After writing out our programs, we must compile `main.c` so that it can be run.
 

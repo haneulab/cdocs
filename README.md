@@ -18,8 +18,9 @@ topics learned in that lecture.
 
 **Basic Understanding Checklist**
 
-[✔️ Command Line Interface (CLI)](#cli)
-[✔️ Python to C](#python)
+- [✔️ Command Line Interface (CLI)](#cli)
+  
+- [✔️ Python to C](#python)
 
 ---
 
