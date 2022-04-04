@@ -191,4 +191,4 @@ void main()
 }
 ```
 
-When a python function returns nothing, we specify with a type `None` at the end with an arrow. In C, we specify `void` in fron of the function name that indicates that the function will not return any value.
+When a python function returns nothing, we specify with a type `None` at the end with an arrow. In C, we specify `void` in front of the function name that indicates that the function will not return any value.
