@@ -39,7 +39,7 @@ int main ()
 {
     int userInteger;
     char userSingleChar;
-    char[17] userMultipleChars;
+    char userMultipleChars[17];
 
     // get user integer
     printf("Hey, type your integer : ");

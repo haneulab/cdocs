@@ -13,7 +13,7 @@ int main()
     // any value user will assign to this variable must be something like anything above or 'ab2', 'adb2@9B', '123'
     // it cannot recieve a combinations of words with spaces like 'hello world'
     char userInputMultipleChar[31];
-    printf("Hey, user! now you should enter a set of characters (without space) whose length is less than or equal to 30 characters :");
+    printf("Hey, user! now you should enter a set of characters (without space) whose length is less than or equal to 30 characters : ");
     scanf("%s", userInputMultipleChar);
 
     // print two variables
