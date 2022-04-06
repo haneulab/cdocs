@@ -17,7 +17,7 @@ bracket expressions in a **newline**.
 For example,
 
 ```c
-void Hello () {
+void sayHello () {
     int x = 0;
 
     printf("Hello!\n");
@@ -34,7 +34,7 @@ void Hello () {
 The code above works fine. But, many others seem like they use the style below
 
 ```c
-void Hello () 
+void sayHello () 
 {
     int x = 0;
 
