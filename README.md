@@ -179,16 +179,16 @@ There are some syntactic differences between python functions and c functions
 
 ```python
 # python hello world function
-def main() -> None:
+def helloWorld() -> None:
     print("Hello World!")
 ```
 
 ```c
 // c hello world function
-void main()
+void helloWorld(void)
 {
     printf("Hello World!");
 }
 ```
 
-When a python function returns nothing, we specify with a type `None` at the end with an arrow. In C, we specify `void` in front of the function name that indicates that the function will not return any value.
+When a python function returns nothing, we specify with a type `None` at the end with an arrow. In C, we specify `void` in front of the function name that indicates that the **function will not return any value**.
