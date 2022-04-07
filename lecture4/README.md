@@ -2,8 +2,6 @@
 
 Today, we went over a few different topics. For each topic related codes, please go to the corresponding `.c` file.
 
-**Note** some of you may have confusion understanding what `void` means before the function name or inside the function argument, for this, I created a directory in here `./functions/`, please go there and read `README.md`. 
-
 ---
 
 ###  Loops and Prefix & Postfix Expressions
@@ -108,3 +106,116 @@ But consider the example where we are dictating a student's GPA for given a lett
 The student got letter grades as `['A', 'B', 'C']` in the three classes that he or she took. Assuming that the weight of each class (the units) are equal, we know that this student will have `3.0 GPA` this quarter. 
 
 If we were to program this, we can use `switch`. 
+
+```c
+#include <stdio.h>
+
+int switchGrade(char letterGrade)
+{
+    int numericGrade = 0;
+
+    switch(letterGrade)
+    {
+        case 'A':
+            numericGrade = 4;
+            break;
+        case 'B':
+            numericGrade = 3;
+            break;
+        case 'C':
+            numericGrade = 2;
+            break;
+        case 'D':
+            numericGrade = 1;
+            break;
+        default:
+            break;
+    }
+
+    printf("You got %c = %d in the course\n", letterGrade, numericGrade);
+
+    return numericGrade;
+}
+
+int main ()
+{
+    char courseGradeA = 'A';
+    char courseGradeB = 'B';
+    char courseGradeC = 'C';
+
+    int numericGradeA = switchGrade(courseGradeA);
+    int numericGradeB = switchGrade(courseGradeB);
+    int numericGradeC = switchGrade(courseGradeC);
+
+    int sumGradePoints = numericGradeA + numericGradeB + numericGradeC;
+    int totalCourses = 3;
+
+    // float should be replace with int (after we learn the concept of 'float')
+    // we have not yet learned 'float' in C.
+    int thisGPA = sumGradePoints / totalCourses;
+
+    printf("Calculated. Your GPA this quarter is : %d\n", thisGPA)
+;}
+```
+
+---
+
+### Concept of Goto
+
+Consider the following code in python,
+
+```python
+import sys
+
+# define main function (returns None)
+def main () -> None:
+    userAge : int = 0
+
+    try:
+        userAge = int(input("How old are you? : "))
+        if userAge < 0:
+            raise Exception("Your age must be greater than or equal to 0.")
+
+        printf("Your age is validated!")
+
+    except Exception as e:
+        printf("There was error executing 'int()' function on the user input")
+        sys.exit(1)
+
+# call the defined main function
+main()
+```
+
+In the above code, we are letting the user type their age as a numeric value but if user types any numeric value less than 0 for his or her age, it will raise an exception because 'how can someone have negative valued age?'
+
+In the programmer's perspective, this can definitely happen either it was an accident or user had drunk too much and he or she ran this program typing some random invalid value for the age.
+
+Another things about the code in the `try` block is that it is possible that our program will crash because if the user puts a character as input instead of number, converting string into integer does not make any sense. This is also expected problem that users can type into the program. 
+
+In such cases, we want to prevent the program from crashing or at least let user know in place what went wrong about inputing asked values. 
+
+There is a similar but a bit different concept we can use in our validation or predictable action controller statement in `C` programming language. 
+
+It is `goto` and `end`. Take a look at the following code. For the simplicity, we will only tell ourselves that we can predict the user may type their age as a negative number.
+
+```c
+#include <stdio.h>
+
+int main ()
+{
+    int userAge;
+    printf("How old are you? : ");
+    scanf("%d", &userAge);
+
+    if (userAge < 0)
+        goto end;
+
+    printf("User, congrats! you typed a valid value for your age.\n");
+
+    end:
+        printf("User, it seems like you typed an invalid value for your age\n");
+        printf("Program ending...\n");
+}
+```
+
+In the code above, if the user types negative number, the program (at the first line from the `if` statement) will directly send the execution (skip to the 'end' block).
