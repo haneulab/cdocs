@@ -170,18 +170,29 @@ int main ()
 
 **Create a file & paste it to the file**
 
+The convention with the `.c` filename and its executable is the following
+
+- `filename` : `some.c`, `some_file.c`, `some_new_file.c`
+- `executable filename` : `some`, `some_file`, `some_new_file`
+
+The following is a way to complite `.c` file using gcc (GND Complier Collection).
+
 ```bash
 touch ./fun.c
+# or
+touch fun.c
 ```
 
 **Compile it to executable**
 
 ```bash
-gcc ./fun.c -o fun-executable
+gcc ./fun.c -o ./fun
+# or
+gcc fun.c -o fun
 ```
 
 **Run the program**
 
 ```bash
-./fun-executable
+./fun
 ```
