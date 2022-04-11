@@ -19,6 +19,7 @@ int main ()
 	/*
 	 * loops & breaks
 	 */
+	int x;
 	while (1)
 	{       
 		/*
@@ -26,7 +27,6 @@ int main ()
 		 */
 		if (x == 10)
 			continue;
-		int x;
 		scanf("%d", &x);
 		if (x == 5)
 			break;

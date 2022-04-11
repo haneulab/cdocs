@@ -6,7 +6,7 @@ int main ()
 	float x = 32.23;
 	double y = 32.25;
 	
-	// fixed (rounded)
+	// fixes decimals to tenth digit (rounded)
 	printf("x=%.2f,y=%.2lf\n", x, y);
 
 	bool a = true;
