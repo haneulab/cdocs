@@ -1,6 +1,6 @@
 # Welcome to Pointers in C 🧑🏻‍💻👨🏻‍💻👩🏻‍💻
 
-.
+*written by [Haneul Choi](httsp://haneulab.com)*
 
 <aside>
 💡  In this module, I will go over the concept of **pointer** which is just a technical term for referring to the address for a program variable
