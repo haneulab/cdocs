@@ -1,0 +1,6 @@
+abcd
+xyz
+qrs
+aaa
+bcd
+*
