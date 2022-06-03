@@ -1,3 +1,8 @@
-.vscode/
-.DS_Store
-.assignments/
+# ignore dev setting directories
+**/.vscode
+**/.DS_Store
+**/node_modules
+
+# test dirs
+test/
+**/test2
