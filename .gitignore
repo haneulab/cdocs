@@ -1,8 +1,8 @@
-# ignore dev setting directories
+# ignore dev  directories
 **/.vscode
 **/.DS_Store
 **/node_modules
 
-# test dirs
-test/
-**/test2
+# ignore dev transpiled & compiled & build info directories & executable files
+**/__pycache__
+**/*.out
