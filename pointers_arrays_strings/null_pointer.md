@@ -62,7 +62,7 @@ int printHi(char *name)
 
 ## Some Testing About NULL pointer
 
-Now we know that `NULL` is a pointer that points to nothing in the memory. We can analyze some tricky cases where the program might not behave as we expect. Consider the following examples.
+When is `NULL` pointer useful? Well, suppose that your program has functions that take pointers as its arguments. Then, the best way to compose your functions in way that it won't crash is `to check if regular pointer is passed and not the NULL pointer`. So take a look at the example below.
 
 ```c
 #include <stdio.h>
@@ -89,3 +89,27 @@ This example program above will print the following.
 null pointer passed
 normal (not null) pointer passed
 ```
+
+## Manipulating NULL Pointer
+
+Unlike the normal pointer, NULL pointer will CAUSE some deterimental CRASH in your program if we try to manipulate it.
+
+One known manipulation to a pointer as we know is **deferencing**.
+
+Take a look at the following program.
+
+```c
+int main()
+{
+    int *ptr = NULL;
+    int num = 0;
+
+    *ptr = num;
+}
+```
+
+Here, we are trying to dereference the `NULL` pointer to assign `num`'s variable value to the reference.
+
+Logically what we are trying to do it to change the value of the variable that `NULL` pointer is pointing to, but `NULL` is not pointing to anything. So the program will CRASH.
+
+When handling & manipulating `NULL` pointer, it is important to logically draw the steps of its life-cycle in the program so that we don't unexpectedly manipulate `NULL` pointer.
