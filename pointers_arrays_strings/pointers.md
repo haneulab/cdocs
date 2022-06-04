@@ -1,6 +1,9 @@
 **filename** : **pointers.md**
+
 **author** : **Haneul Choi** [hanchoi@ucdavis.edu](hanchoi@ucdavis.edu)
+
 **brief** : exploring the basic understanding & usage of pointer variables.
+
 **date** : **06/03/2022**
 
 # Pointers
