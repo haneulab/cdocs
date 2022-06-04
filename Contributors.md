@@ -11,3 +11,5 @@ If you are contributing to this repo contents, please append your info to the li
 ## 🖊️ Our Contributors
 
 - **Haneul Choi** : `core-contributor & repo-maintainer` : [github](#), [linkedin](#), [website](#).
+
+- **Dave Nguyen** : `core-contributor` : [github](#), [linkedin](#), [website](#)
