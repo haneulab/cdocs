@@ -8,13 +8,86 @@ Below is the direction as to how to start contributing properly using appropriat
 
 #### 🚀 Clone The Repository
 
+```bash
+git clone "https://github.com/haneulab/c.git" ./c-docs
+```
+
 #### 🚀 Create Your Branch
+
+```bash
+git checkout -b <your_github_username>-branch
+```
 
 #### 🚀 Add Relevant Contents To Relevant Directory
 
+The following content is an example demo for working in a directory in your new branch that you want to add to the repo.
+
+```bash
+# example : working in ./intro_to_c & creating if_else.c file
+touch if_else.c
+```
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    // if & else statement in C
+
+    // CASE 1: if one line statement, brackets are not needed
+
+    int i = 0;
+    if(1)
+        return 1;
+    else
+        return 0;
+}
+```
+
+```bash
+# compile
+gcc if_else.c
+# execute
+./a.out
+```
+
 #### 🚀 Clean Up Unnecessary Files Or Directories From Development Setting
 
+If you want to ignore some specific files (which you should such as executables & any environmental directories or dot files). The root directory's `.gitignore` might not cover all the things your local environment creates. Then you can simply add a .gitinore file in this working directory and add the line that specifies the file pattern you want to ignore.
+
+```bash
+touch ./gitignore
+```
+
+```bash
+# .gitignore
+...
+*.out
+*.o
+```
+
 #### Git Commit & Push to Your Branch
+
+**Git Add**
+
+```bash
+# for adding all files you added
+git add .
+# for adding a specific file (or patterned)
+git *.c
+```
+
+**Git COMMIT**
+
+```bash
+git commit -m "your message about your current action (added a file/updated a file/...)"
+```
+
+**GIT PUSH**
+
+```bash
+git push --set-upstream-branch origin <the_branch_name_you_checked_out>
+```
 
 #### Submit a Pull Request & Wait for Approval
 
@@ -22,64 +95,51 @@ Below is the direction as to how to start contributing properly using appropriat
 
 ## Contribution Review Request Minimum Requirement
 
-It is required that the future contributors keep the consistent syntax when it comes to **Creating Directoies and Files**. For both creating directories and files, it must follow the common **camelCase** rule.
+1. Add New Contritutions in the sub folders listed below only.
 
-For example, if you want to create a `.c` file that deals with topics of datatypes & you want to name is something like `data type.c`, then you may name the file as
+2. Follow the convention for naming files.
 
-`dataType.c`
+3. Do NOT modify files that is not initially added by you or files that are in the root directory besides `contributors.md` where you will add your info as a contributor.
 
-`dataTypes.c`
+## File Creation Rule
 
-but **NOT**,
+These rules apply to the files that you create & push to the repo in your working branch.
 
-`DataType.c`
+- **nameing the file** : name the file that describes the content inside.
+- **snake_style_declaration** : file names should be snake_style for a filename containing multiple words.
+- **extensiion of the file** : set is to either `.c`, `.md`, `.gitignore`.
 
-`data-type.c`
+- **parent directory choice** : please put your file into the topic-relevant directory from the list below.
 
-`Datatype.c`
+- If the file is NOT `.gitignore`, please do specify the author credits & brief description about the file content at the top of the file.
 
-`dTypes.c`
+For example, take a look at `example.c` file I want to push
 
-`dataTyps.c`
+```c
+/**
+ * @file : example.c
+ * @author : John Doe : john@doe.com
+ * @brief : example c file showing the demo of the top of the file
+ * @date : 06/02/2022
+ * @copyright Copyright (c) 2022
+ */
 
-_Do not shorten the standart name which the topic is refering to._
+#include <stdio.h>
 
-Hope that this is pretty straight forward.
+int main()
+{
+    return 0;
+}
+```
 
-Similarly for directory names, if you want to create a directory in your branch (which you want it to be merged to main later), then you have to name it using **camelCase**. Suppose that I want to create a directory and a file in it. The directory is about _struct pointers_, then you can name the directory in the following pattern.
+## Working Directory Options
 
-`structPointers`
+You may contribute to the following directories for the C documentation content. Please add only the relevant contents to these directories to keep them organized.
 
-`structPointer`
+- `/intro_to_c` : introductory concepts such as syntax, datatype, control-flow statements, ...
 
-`pointerOfStruct`
+- `/pointers_arrays_strings` : anything relevant to pointers, arrays and strings should be worked within this directory.
 
-`pointersOfStruct`
+- `/structs` : any content explaining the concept `struct` should be in there.
 
-but **NOT**,
-
-`structpointers`
-
-`struct-pointers`
-
-`str-ptr`
-
-`structPtr`
-
-`strPointers`
-
-_Do not shorten the full name which the topic is refering to._
-
-For the programming style, it is freedom however you want to format. But **We Encourage** you do write the explanation text, function `argument` `return` types and its functionality with the best practices you know. At the end, the goal is to help others learn & use it in their project so if they have trouble understanding what the argument type or what they are even for, then it is actually bad that they lose the time reading our documentation, which we don't want to let happen.
-
-## What CANNOT be changed
-
-When you first clone the repo, you will see directories that has prefix of `core`. You may not modify the name of these directories, but you can absolutely add files or directories within them. They are there to be presented as the basic list of indexes that users can follow when learning the content.
-
-## What CAN be changed
-
-Any files written by YOU and YOU only in workspace directories `/coreXDirectory/` can be changed overtime. If you are not the previous author of a specific file `someFile.c` but you find an issue, you can submit an issue but not modify it.
-
-Also, you can **append** your contributor info to the `Contributors.md` in the `master` branch.
-
-These are the only things that you can change and anything else will be allowed.
+- `/linux_cli` : any content related from basic linux commands to advanced pipelining & redirection of file inputs & outputs should go in there.
