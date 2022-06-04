@@ -33,10 +33,8 @@ We highly suggest that you use your `code editor` as one of the following along 
 
 The following is the list of the materials (topics) covered in our repository.
 
-- **coreBasic** : `integer`, `float`, `char`,`array`,`dataSize`, `formatSpecifiers`, `conversionType`,`controlFlow`, `loopOperation`, `scopes`, `functions`, `array`, `pointers`,`nullType`, `struct`, `memory`, `memoryAllocation`, `fileSystem`, `headerFiles`.
-
-- **coreDataStructures** : `DynamicArr`, `stackArr`, `queueArr`, `hashArr`.
-
-- **coreImplementations** : `strCompare : strcmp`, `strLength : strlen`
-
-- **coreLinuxCli** : `usefulCommands`, `standardInputsAndErrors`, `redirection`, `sequencePipelining`
+- **`/intro_to_c`**
+- **`/data_structures`**
+- **`/pointers_arrays_strings`**
+- **`/structs`**
+- **`/linux_cli`**
