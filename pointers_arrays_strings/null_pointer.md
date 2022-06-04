@@ -89,3 +89,27 @@ This example program above will print the following.
 null pointer passed
 normal (not null) pointer passed
 ```
+
+## Manipulating NULL Pointer
+
+Unlike the normal pointer, NULL pointer will CAUSE some deterimental CRASH in your program if we try to manipulate it.
+
+One known manipulation to a pointer as we know is **deferencing**.
+
+Take a look at the following program.
+
+```c
+int main()
+{
+    int *ptr = NULL;
+    int num = 0;
+
+    *ptr = num;
+}
+```
+
+Here, we are trying to dereference the `NULL` pointer to assign `num`'s variable value to the reference.
+
+Logically what we are trying to do it to change the value of the variable that `NULL` pointer is pointing to, but `NULL` is not pointing to anything. So the program will CRASH.
+
+When handling & manipulating `NULL` pointer, it is important to logically draw the steps of its life-cycle in the program so that we don't unexpectedly manipulate `NULL` pointer.
