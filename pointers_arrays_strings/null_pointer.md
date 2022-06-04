@@ -62,7 +62,7 @@ int printHi(char *name)
 
 ## Some Testing About NULL pointer
 
-Now we know that `NULL` is a pointer that points to nothing in the memory. We can analyze some tricky cases where the program might not behave as we expect. Consider the following examples.
+When is `NULL` pointer useful? Well, suppose that your program has functions that take pointers as its arguments. Then, the best way to compose your functions in way that it won't crash is `to check if regular pointer is passed and not the NULL pointer`. So take a look at the example below.
 
 ```c
 #include <stdio.h>
