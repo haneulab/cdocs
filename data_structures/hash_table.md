@@ -116,7 +116,7 @@ Load size, or λ (lambda), is the ratio of elements in the hash table and the to
 To make the hash table efficient, the load size should always be less than 1/2. If the load size exceeds 1/2, then the table needs to be rehashed and the table size needs to be increased.
 
 ## Rehashing
-If the load factor is too high (λ > 1/2), your hash table needs to rehash. This means that you need to increase your table size by doubling your current table size and find the next largest prime number. 
+If the load factor is too high (λ > 1/2), your hash table needs to be rehashed. This means that you need to increase your table size by doubling your current table size and find the next largest prime number. 
 
 **These are the steps you needs to do to rehash:**
 Let `m` be the old table size and `m'` be the new table size.
