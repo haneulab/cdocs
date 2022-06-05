@@ -11,3 +11,4 @@ If you are contributing to this repo contents, please append your info to the li
 ## 🖊️ Our Contributors
 
 - **Haneul Choi** : `core-contributor & repo-maintainer` : [github](#), [linkedin](#), [website](#).
+- **Megumi Swarthout**: `core-contributor` : [linkedin](https://www.linkedin.com/in/megumi-swarthout/)
