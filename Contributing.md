@@ -61,7 +61,16 @@ git commit -m "your message about your current action (added a file/updated a fi
 **GIT PUSH**
 
 ```bash
-git push --set-upstream-branch origin <the_branch_name_you_checked_out>
+git push --set-upstream origin your_branch_name
+# SIDE NOTE
+# When it asks you to authentication from github such as username & password
+# you need to generate your own personal github token & replace the token that with the password (in the password section)
+# TO CREATE NEW TOKEN
+# 1. go to github.com
+# 2. go to settings
+# 3. go to developer settings in the left sticky menu
+# 4. go to personal token & genereate
+# 5. copy and save it somewhere only you can have access so you can use it later (it is only visible one time when it is generated)
 ```
 
 #### Submit a Pull Request & Wait for Approval
