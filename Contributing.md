@@ -22,34 +22,9 @@ git checkout -b <your_github_username>-branch
 
 The following content is an example demo for working in a directory in your new branch that you want to add to the repo.
 
-```bash
-# example : working in ./intro_to_c & creating if_else.c file
-touch if_else.c
-```
+The file must be extension of either `.md` or `.c` file. If you have any object files or executable please specify in the `.gitignore` so that they won't be pushed.
 
-```c
-#include <stdio.h>
-
-int main()
-{
-    // if & else statement in C
-
-    // CASE 1: if one line statement, brackets are not needed
-
-    int i = 0;
-    if(1)
-        return 1;
-    else
-        return 0;
-}
-```
-
-```bash
-# compile
-gcc if_else.c
-# execute
-./a.out
-```
+Each file you write must specify the name of the author, filename, file written date, and brief description about the file. For the example template, please refer to the `example_c_file.c` or `example_md_file.md` in the root directory.
 
 #### 🚀 Clean Up Unnecessary Files Or Directories From Development Setting
 
