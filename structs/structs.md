@@ -34,7 +34,7 @@ struct Student
 
     float currentGPA; // current GPA : 3.50
     char **currentClasses; // current classes taking : {"PHI112", "ECS50", ...}
-}
+};
 ```
 
 Basic declaration of a `struct` in C is as simple as writing the keyword `struct` followed by the name of the object you want to use. In the above example, I used an example of `struct Student` to represent a student in a university and also I defined its member variables when declaring the object.
@@ -55,7 +55,7 @@ struct Student {
 
     float currentGPA; // current GPA : 3.50
     char **currentClasses; // current classes taking : {"PHI112", "ECS50", ...}
-}
+};
 
 int main()
 {
