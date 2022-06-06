@@ -43,7 +43,7 @@ Hash tables are made of many buckets. The hash table struct contains the array o
 
 ## Basic operations of a hash table
 
-###**Insert**
+### **Insert**
 Insert an element into a hash table by their key
 
 #### Hash function
@@ -79,7 +79,7 @@ For example:
 
 Here, 84 and 24 both map to bucket 4. However, 84 is already stored in bucket 4, so 24 cannot be stored in it. Therefore, it needs to be placed in the next available empty bucket. This can be found with quadratic probing.
 
-##### Quadratic Probing
+#### Quadratic Probing
 
 Quadratic probing is a method of open-address collision resolution that searches for the i^2th bucket in the ith iteration based on the original hash value index. This method prevents clustering of values in one section of the hash table.
 
@@ -87,12 +87,12 @@ The concept of quadratic probing is if the bucket `hashFunction(key) % table_siz
 
 Another way to think about quadratic probing is to look at the bucket after `hashFunction(key)`, then if that is full, then check 3 buckets after that bucket, then check 5 buckets later, then 7 buckets later, etc. 
 
-###**Search**
+### **Search**
 Searching for an element in a hash table can be implemented in the same way with inserting an element with the hash function. When searching for an element, the hash value or the value through probing should be the index of the element. When coming across a deleted element, you should keep searching the next buckets to see if the element is later on in the hash table. 
 
 If you come across an empty bucket, that means that the element that you are searching for is not in the table, otherwise the element you are searching for would have been stored in the empty bucket. 
 
-###**Delete**
+### **Delete**
 To delete an element in a hash table, you can use the hashFunction and quadratic probing to find the element in the hash table. Once you have found the element, you can lazily delete mark the value in the bucket as deleted using the `flag` that is stored in your bucket struct. With lazy deletion, you are not actually deleting the value from the hash table. Just by marking that the element was deleted, this signals the search function that a value was here before, but has been deleted, so there is a chance that the element you are searching for is in a later bucket. This is to prevent the search function from stopping prematurely and falsely reporting that the element is not in the table.
 
 ```c
