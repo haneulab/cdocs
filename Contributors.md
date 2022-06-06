@@ -10,8 +10,10 @@ If you are contributing to this repo contents, please append your info to the li
 
 ## 🖊️ Our Contributors
 
-- **Haneul Choi** : `core-contributor & repo-maintainer` : [github](#), [linkedin](#), [website](#)
+- **Haneul Choi** : `core-contributor & repo-maintainer` : [github](https://github.com/haneulab), [linkedin](https://linkedin.com/in/haneulab), [website](https://haneulab.com)
 
 - **Megumi Swarthout**: `core-contributor` : [linkedin](https://www.linkedin.com/in/megumi-swarthout/)
 
 - **Catherine Chen** : `core-contributor` : [github](#), [linkedin](#), [website](#)
+
+- **Dave Nguyen** : `core-contributor` : [github](DaveStutler), [linkedin](#), [website](#)
