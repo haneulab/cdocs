@@ -1,0 +1,20 @@
+{
+  "name": "c-docs",
+  "version": "1.0.0",
+  "description": "This repository will provide useful resources & explanations from our **contributors** for specific concepts (of programming & C language).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haneulab/c.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haneulab/c/issues"
+  },
+  "homepage": "https://github.com/haneulab/c#readme"
+}
