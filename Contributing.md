@@ -22,34 +22,9 @@ git checkout -b <your_github_username>-branch
 
 The following content is an example demo for working in a directory in your new branch that you want to add to the repo.
 
-```bash
-# example : working in ./intro_to_c & creating if_else.c file
-touch if_else.c
-```
+The file must be extension of either `.md` or `.c` file. If you have any object files or executable please specify in the `.gitignore` so that they won't be pushed.
 
-```c
-#include <stdio.h>
-
-int main()
-{
-    // if & else statement in C
-
-    // CASE 1: if one line statement, brackets are not needed
-
-    int i = 0;
-    if(1)
-        return 1;
-    else
-        return 0;
-}
-```
-
-```bash
-# compile
-gcc if_else.c
-# execute
-./a.out
-```
+Each file you write must specify the name of the author, filename, file written date, and brief description about the file. For the example template, please refer to the `example_c_file.c` or `example_md_file.md` in the root directory.
 
 #### 🚀 Clean Up Unnecessary Files Or Directories From Development Setting
 
@@ -86,7 +61,16 @@ git commit -m "your message about your current action (added a file/updated a fi
 **GIT PUSH**
 
 ```bash
-git push --set-upstream-branch origin <the_branch_name_you_checked_out>
+git push --set-upstream origin your_branch_name
+# SIDE NOTE
+# When it asks you to authentication from github such as username & password
+# you need to generate your own personal github token & replace the token that with the password (in the password section)
+# TO CREATE NEW TOKEN
+# 1. go to github.com
+# 2. go to settings
+# 3. go to developer settings in the left sticky menu
+# 4. go to personal token & genereate
+# 5. copy and save it somewhere only you can have access so you can use it later (it is only visible one time when it is generated)
 ```
 
 #### Submit a Pull Request & Wait for Approval

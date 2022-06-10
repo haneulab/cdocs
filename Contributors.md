@@ -10,6 +10,14 @@ If you are contributing to this repo contents, please append your info to the li
 
 ## 🖊️ Our Contributors
 
+<<<<<<< HEAD
 - **Haneul Choi** : `core-contributor & repo-maintainer` : [github](#), [linkedin](#), [website](#).
 
-- **Dave Nguyen** : `core-contributor` : [github](DaveStutler), [linkedin](#), [website](#)
+- **Dave Nguyen** : `core-contributor` : [github](#), [linkedin](#), [website](#)
+=======
+- **Haneul Choi** : `core-contributor & repo-maintainer` : [github](#), [linkedin](#), [website](#)
+
+- **Megumi Swarthout**: `core-contributor` : [linkedin](https://www.linkedin.com/in/megumi-swarthout/)
+
+- **Catherine Chen** : `core-contributor` : [github](#), [linkedin](#), [website](#)
+>>>>>>> 9f40a780b09a33eda8ff4eb2cecc3fc87e274571
