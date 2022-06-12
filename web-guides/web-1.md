@@ -42,8 +42,4 @@ Today, we've discussed the fundamental use of `HTML`, `CSS` and `JavaScript` and
       function addTwoNums(a, b) {
         console.log(a + b);
       }
-      addTwoNums("hi", 10);
-    </script>
-  </body>
-</html>
 ```
