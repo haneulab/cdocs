@@ -17,3 +17,5 @@ If you are contributing to this repo contents, please append your info to the li
 - **Megumi Swarthout**: `core-contributor` : [linkedin](https://www.linkedin.com/in/megumi-swarthout/)
 
 - **Catherine Chen** : `core-contributor` : [github](#), [linkedin](#), [website](#)
+
+- - **Casey Anno** : `core-contributor` : [github](#), [linkedin](#), [website](#)
