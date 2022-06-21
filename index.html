@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>C-Docs | Welcome to C Programming Documentation</title>
+</head>
+
+<body>
+    <div id="app" class="w-full min-h-screen justify-between items-center relative bg-white texxt-slate-800">
+        <header class="c-docs-header w-full fixed top-0 z-50 backdrop-blur-sm">
+            <section class="flex justify-between items-center px-8 py-4">
+                <h1 class="font-medium text-2xl flex items-center space-x-2">
+                    <span
+                        class="px-3 py-2 animate-pulse rounded-full bg-gradient-to-br from-cyan-500 to-blue-500 text-white font-bold text-lg">C</span>
+                    <span class="text-slate-50">Docs</span>
+                </h1>
+                <div class="w-max flex items-center space-x-8 text-slate-400">
+                    <nav class="flex items-center space-x-2 text-cyan-400">
+                        <a href="#" class="transition-all hover hover:text-slate-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                            </svg>
+                        </a>
+                        <a href="#" class="transition-all hover hover:text-slate-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="transition-all hover hover:text-slate-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </nav>
+                    <nav class="w-max flex items-center space-x-4 text-lg font-medium">
+                        <a class="transition-all hover hover:text-slate-200" href="#">Docs</a>
+                        <a class="transition-all hover hover:text-slate-200" href="#">Team</a>
+                        <a class="transition-all hover hover:text-slate-200" href="#">Contribute</a>
+                    </nav>
+                    <div class="w-max">
+                        <button
+                            class="px-3 py-2 rounded-md ring-2 ring-transparent hover hover:bg-blue-600 hover:ring-cyan-600 transition-all bg-blue-500 text-white font-medium">
+                            <code>README</code>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="c-docs-main-fixed w-full bg-gradient-to-br from-black/80 via-slate-900 to-black/80 text-slate-50">
+            <section class="px-8 py-28 flex flex-col items-center justify-center max-w-2xl mx-auto">
+                <h3 class="text-6xl text-center font-bold mb-2">Welcome to <span
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-400">C
+                        Docs</span>
+                </h3>
+                <p class="font-light text-xl mb-8 text-center">Written & Managed By a Group of Software Students from
+                    UC Davis</p>
+                <code class="text-center leading-8">
+                    You can be one of the contributors for this amazing community!
+                </code>
+                <div class="w-10/12 mx-auto flex grid grid-cols-2 gap-8 mt-8">
+                    <button
+                        class="px-8 py-2 border-b-2 border-cyan-500 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400/70 to-blue-400/90 font-medium transition-all hover hover:border-blue-500 hover:from-cyan-400 hover:to-blue-400">List
+                        Of
+                        Topics</button>
+                    <button
+                        class="px-8 py-2 border-b-2 border-cyan-500 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400/70 to-blue-400/90 font-medium transition-all hover hover:border-blue-500 hover:from-cyan-400 hover:to-blue-400">Core
+                        contributors</button>
+                </div>
+            </section>
+        </main>
+        <main
+            class="c-docs-main w-full flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 to-cyan-50">
+            <section class="px-8 py-28 w-full max-w-7xl mx-auto">
+                <div class="grid grid-cols-3 gap-8 h-full items-stretch">
+
+                    <article class="w-full backdrop-blur-sm border bg-gradient-to-br from-white to-slate-50 rounded-xl">
+                        <section class="p-8 h-full flex flex-col justify-between">
+                            <h3 class="font-semibold text-xl text-slate-400 mb-4">Introduction To C Programming
+                            </h3>
+                            <div class="w-full">
+                                <p class="text-slate-600">
+                                    Learn the basic syntax & core-library useage in C programming.
+                                </p>
+                                <div class="mt-4">
+                                    <button
+                                        class="px-3 py-2 border-b border-cyan-400 text-cyan-600 flex items-center space-x-2 transition-all hover hover:px-5 hover:border-cyan-600 hover:text-cyan-500">
+                                        <span>Read Documentation</span> <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+
+                    <article class="w-full backdrop-blur-sm border bg-gradient-to-br from-white to-slate-50 rounded-xl">
+                        <section class="p-8 h-full flex flex-col justify-between">
+                            <h3 class="font-semibold text-xl text-slate-400 mb-4">Introduction To Linux Command Line
+                                Interface (Linux CLI)</h3>
+                            <div class="w-full">
+                                <p class="text-slate-600">
+                                    Learn the basic syntax & core-library useage in C programming.
+                                </p>
+                                <div class="mt-4">
+                                    <button
+                                        class="px-3 py-2 border-b border-cyan-400 text-cyan-600 flex items-center space-x-2 transition-all hover hover:px-5 hover:border-cyan-600 hover:text-cyan-500">
+                                        <span>Read Documentation</span> <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+
+                    <article class="w-full backdrop-blur-sm border bg-gradient-to-br from-white to-slate-50 rounded-xl">
+                        <section class="p-8 h-full flex flex-col justify-between">
+                            <h3 class="font-semibold text-xl text-slate-400 mb-4">Implementations of Data Structures
+                            </h3>
+                            <div class="w-full">
+                                <p class="text-slate-600">
+                                    Learn the basic syntax & core-library useage in C programming.
+                                </p>
+                                <div class="mt-4">
+                                    <button
+                                        class="px-3 py-2 border-b border-cyan-400 text-cyan-600 flex items-center space-x-2 transition-all hover hover:px-5 hover:border-cyan-600 hover:text-cyan-500">
+                                        <span>Read Documentation</span> <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="c-docs-footer w-full bg-white/90 text-slate-400">
+            <section class="p-8 py-16">
+                <p class="text-center">Copyright &copy; 2022. All Rights Reserved.</p>
+            </section>
+        </footer>
+    </div>
+    <script defer>
+        console.log("hi");
+    </script>
+</body>
+
+</html>
