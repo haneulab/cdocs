@@ -1,0 +1,11 @@
+# ignore dev  directories
+**/.vscode
+**/.DS_Store
+**/node_modules
+
+# ignore dev transpiled & compiled & build info directories & executable files
+**/__pycache__
+**/*.out
+
+# ignore webpage build directory
+**/build
