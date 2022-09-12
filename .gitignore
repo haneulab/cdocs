@@ -8,4 +8,4 @@
 **/*.out
 
 # ignore webpage build directory
-**/build
+build
